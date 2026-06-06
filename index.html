@@ -1,119 +1,267 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Viovox — Control your phone with EEG</title>
-		<meta name="description" content="Viovox helps people control their phone hands‑free using EEG headsets (Muse 2 supported first)." />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Control your phone with EEG. Hands-free control using EEG headsets. Muse 2 supported first.">
+    <meta name="theme-color" content="#ffffff">
+    <title>VioVox – EEG Phone Control</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="VioVox Logo" class="logo-img">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#how">How it Works</a></li>
+                    <li><a href="#progress">Progress</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<header class="nav">
-			<a class="brand" href="#product">
-				<img class="logo" src="assets/logo.png" alt="Viovox logo" />
-				<span class="brand-name">Viovox</span>
-			</a>
+    <!-- Hero Section with Inline Waitlist Form -->
+    <section id="product" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Control your phone with EEG.</h1>
+                <p class="hero-subtitle">Hands‑free control using EEG headsets. Muse 2 supported first.</p>
+                <p class="hero-trust">Built in Tampere, Finland.</p>
 
-			<nav class="links">
-				<a href="#product">Product</a>
-				<a href="#how">How it works</a>
-				<a href="#progress">Progress</a>
-				<a href="#faq">FAQ</a>
-				<a href="#contact">Contact</a>
-			</nav>
+                <!-- Inline Waitlist Form -->
+                <form class="waitlist-form hero-form" id="waitlistFormHero">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="emailHero" 
+                            name="email" 
+                            placeholder="Enter your email" 
+                            required
+                            autocomplete="email"
+                            aria-label="Email address"
+                        >
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input 
+                                type="checkbox" 
+                                id="consentHero" 
+                                name="consent" 
+                                required
+                                aria-label="I agree to receive updates"
+                            >
+                            <span>I agree to receive updates</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" aria-label="Join the waitlist">
+                        Join the waitlist
+                    </button>
+                    <div class="form-message" id="formMessageHero"></div>
+                </form>
 
-			<div class="nav-cta">
-				<a class="btn btn-ghost" href="https://www.instagram.com/viovox_nyt" target="_blank" rel="noreferrer">Instagram</a>
-				<a class="btn btn-primary" href="#contact">Join waitlist</a>
-			</div>
-		</header>
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/viovox_nyt" target="_blank" rel="noopener noreferrer" class="instagram-link" aria-label="Follow on Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37Z"></path>
+                        <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
 
-		<main>
-			<section id="product" class="hero">
-				<div class="hero-text">
-					<h1>Control your phone with EEG.</h1>
-					<p class="sub">
-						Hands‑free control using EEG headsets (Muse 2 supported first).
-					</p>
-					<div class="hero-cta">
-						<a class="btn btn-primary" href="#contact">Join the waitlist</a>
-						<a class="btn btn-ghost" href="#demo">Watch demo</a>
-					</div>
-				</div>
-				<div class="hero-card">
-					<div class="demo-box" id="demo">
-						<div class="demo-title">Demo</div>
-						<div class="demo-sub">Prototype video coming soon.</div>
-					</div>
-				</div>
-			</section>
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <article class="benefit-card">
+                    <div class="benefit-icon"></div>
+                    <h3>Hands‑free control</h3>
+                    <p>Navigate and interact with your device using only your brainwaves.</p>
+                </article>
+                <article class="benefit-card">
+                    <div class="benefit-icon"></div>
+                    <h3>Fast calibration</h3>
+                    <p>Get started in minutes with our intuitive setup process.</p>
+                </article>
+                <article class="benefit-card">
+                    <div class="benefit-icon"></div>
+                    <h3>Privacy‑minded</h3>
+                    <p>Your brainwave data stays on your device, never shared without consent.</p>
+                </article>
+                <article class="benefit-card">
+                    <div class="benefit-icon"></div>
+                    <h3>Muse 2 first</h3>
+                    <p>Starting with Muse 2. More headsets coming soon.</p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-			<section id="how" class="section">
-				<h2>How it works</h2>
-				<div class="cards">
-					<div class="card">1) Connect EEG headset</div>
-					<div class="card">2) Calibrate & train commands</div>
-					<div class="card">3) Control your phone</div>
-				</div>
-			</section>
+    <!-- Demo Placeholder -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="demo-card">
+                <div class="demo-play-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                </div>
+                <p class="demo-text">Demo coming soon (prototype)</p>
+            </div>
+        </div>
+    </section>
 
-			<section id="progress" class="section">
-				<h2>Progress</h2>
-				<ul class="checklist">
-					<li>✅ Muse 2 signal connected</li>
-					<li>🛠️ Command recognition prototype (in progress)</li>
-					<li>🧩 Mobile MVP (planned)</li>
-					<li>✅ Beta waitlist open</li>
-				</ul>
-			</section>
+    <!-- How it Works Section -->
+    <section id="how" class="how-it-works">
+        <div class="container">
+            <h2>How it works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Wear your headset</h3>
+                    <p>Put on your Muse 2 EEG headset and open the app.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Quick calibration</h3>
+                    <p>Train the system to recognize your brainwave patterns.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Control hands‑free</h3>
+                    <p>Navigate your phone using just your thoughts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<section id="faq" class="section">
-				<h2>FAQ</h2>
-				<details class="faq">
-					<summary>Which EEG headsets are supported?</summary>
-					<p>Muse 2 first. More headsets later.</p>
-				</details>
-				<details class="faq">
-					<summary>Is my data private?</summary>
-					<p>Privacy‑minded by design. More details will be shared during beta.</p>
-				</details>
-			</section>
+    <!-- Progress / Roadmap Section -->
+    <section id="progress" class="progress">
+        <div class="container">
+            <h2>Our progress</h2>
+            <div class="roadmap">
+                <div class="roadmap-item">
+                    <div class="roadmap-status done">Done</div>
+                    <h3>Muse 2 signal connected</h3>
+                    <p>Successfully integrated Muse 2 EEG signals into our app.</p>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-status in-progress">In progress</div>
+                    <h3>Command recognition prototype</h3>
+                    <p>Developing ML models to recognize control commands from EEG data.</p>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-status next">Next</div>
+                    <h3>Mobile MVP</h3>
+                    <p>Building the first minimum viable product for phones.</p>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-status next">Next</div>
+                    <h3>Beta testing</h3>
+                    <p>Opening beta access to waitlist members.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<section id="contact" class="section">
-				<h2>Waitlist & contact</h2>
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently asked questions</h2>
+            <div class="accordion">
+                <details class="accordion-item">
+                    <summary class="accordion-trigger">What is EEG?</summary>
+                    <div class="accordion-content">
+                        <p>EEG (electroencephalography) measures electrical activity in your brain. The Muse 2 headset uses non-invasive sensors to detect these patterns, which we analyze to enable hands-free control.</p>
+                    </div>
+                </details>
 
-				<div class="grid">
-					<form id="waitlistForm" class="panel">
-						<h3>Join the waitlist</h3>
-						<label>Email</label>
-						<input name="email" type="email" required placeholder="you@example.com" />
-						<label class="row">
-							<input name="consent" type="checkbox" required />
-							<span>I agree to be contacted about beta updates.</span>
-						</label>
-						<button class="btn btn-primary" type="submit">Join</button>
-						<p id="waitlistMsg" class="msg" aria-live="polite"></p>
-					</form>
+                <details class="accordion-item">
+                    <summary class="accordion-trigger">Is it safe?</summary>
+                    <div class="accordion-content">
+                        <p>Yes. EEG is completely safe and non-invasive. Muse 2 is a consumer device designed for everyday use. We don't send or store your brainwave data without your explicit consent.</p>
+                    </div>
+                </details>
 
-					<form id="contactForm" class="panel">
-						<h3>Contact</h3>
-						<label>Email</label>
-						<input name="email" type="email" required placeholder="you@example.com" />
-						<label>Message</label>
-						<textarea name="message" required rows="4" placeholder="Write your message..."></textarea>
-						<button class="btn btn-ghost" type="submit">Send (demo)</button>
-						<p id="contactMsg" class="msg" aria-live="polite"></p>
-					</form>
-				</div>
-			</section>
-		</main>
+                <details class="accordion-item">
+                    <summary class="accordion-trigger">What headsets are supported?</summary>
+                    <div class="accordion-content">
+                        <p>We're launching with Muse 2 support. We're actively working on support for other popular EEG headsets and plan to announce more soon.</p>
+                    </div>
+                </details>
 
-		<footer class="footer">
-			<div>Tampere, Finland</div>
-			<div>© <span id="year"></span> Viovox</div>
-		</footer>
+                <details class="accordion-item">
+                    <summary class="accordion-trigger">How accurate is the control?</summary>
+                    <div class="accordion-content">
+                        <p>Our current prototype achieves solid accuracy after a brief calibration. Accuracy improves with use as the system learns your patterns. We're continuously improving our ML models.</p>
+                    </div>
+                </details>
 
-		<script src="script.js"></script>
-	</body>
+                <details class="accordion-item">
+                    <summary class="accordion-trigger">How do I join the waitlist?</summary>
+                    <div class="accordion-content">
+                        <p>Enter your email at the top of the page or in the contact section below. We'll notify you when beta testing opens.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Waitlist Form -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Stay in the loop</h2>
+            <p class="contact-description">Be the first to know about product updates and beta access.</p>
+
+            <form class="waitlist-form" id="waitlistFormContact">
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        id="emailContact" 
+                        name="email" 
+                        placeholder="Enter your email" 
+                        required
+                        autocomplete="email"
+                        aria-label="Email address"
+                    >
+                </div>
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input 
+                            type="checkbox" 
+                            id="consentContact" 
+                            name="consent" 
+                            required
+                            aria-label="I agree to receive updates"
+                        >
+                        <span>I agree to receive updates</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary" aria-label="Join the waitlist">
+                    Join the waitlist
+                </button>
+                <div class="form-message" id="formMessageContact"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 VioVox. Built in Tampere, Finland.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
