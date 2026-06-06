@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Viovox — Control your phone with EEG</title>
+		<meta name="description" content="Viovox helps people control their phone hands‑free using EEG headsets (Muse 2 supported first)." />
+
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="nav">
+			<a class="brand" href="#product">
+				<img class="logo" src="assets/logo.png" alt="Viovox logo" />
+				<span class="brand-name">Viovox</span>
+			</a>
+
+			<nav class="links">
+				<a href="#product">Product</a>
+				<a href="#how">How it works</a>
+				<a href="#progress">Progress</a>
+				<a href="#faq">FAQ</a>
+				<a href="#contact">Contact</a>
+			</nav>
+
+			<div class="nav-cta">
+				<a class="btn btn-ghost" href="https://www.instagram.com/viovox_nyt" target="_blank" rel="noreferrer">Instagram</a>
+				<a class="btn btn-primary" href="#contact">Join waitlist</a>
+			</div>
+		</header>
+
+		<main>
+			<section id="product" class="hero">
+				<div class="hero-text">
+					<h1>Control your phone with EEG.</h1>
+					<p class="sub">
+						Hands‑free control using EEG headsets (Muse 2 supported first).
+					</p>
+					<div class="hero-cta">
+						<a class="btn btn-primary" href="#contact">Join the waitlist</a>
+						<a class="btn btn-ghost" href="#demo">Watch demo</a>
+					</div>
+				</div>
+				<div class="hero-card">
+					<div class="demo-box" id="demo">
+						<div class="demo-title">Demo</div>
+						<div class="demo-sub">Prototype video coming soon.</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="how" class="section">
+				<h2>How it works</h2>
+				<div class="cards">
+					<div class="card">1) Connect EEG headset</div>
+					<div class="card">2) Calibrate & train commands</div>
+					<div class="card">3) Control your phone</div>
+				</div>
+			</section>
+
+			<section id="progress" class="section">
+				<h2>Progress</h2>
+				<ul class="checklist">
+					<li>✅ Muse 2 signal connected</li>
+					<li>🛠️ Command recognition prototype (in progress)</li>
+					<li>🧩 Mobile MVP (planned)</li>
+					<li>✅ Beta waitlist open</li>
+				</ul>
+			</section>
+
+			<section id="faq" class="section">
+				<h2>FAQ</h2>
+				<details class="faq">
+					<summary>Which EEG headsets are supported?</summary>
+					<p>Muse 2 first. More headsets later.</p>
+				</details>
+				<details class="faq">
+					<summary>Is my data private?</summary>
+					<p>Privacy‑minded by design. More details will be shared during beta.</p>
+				</details>
+			</section>
+
+			<section id="contact" class="section">
+				<h2>Waitlist & contact</h2>
+
+				<div class="grid">
+					<form id="waitlistForm" class="panel">
+						<h3>Join the waitlist</h3>
+						<label>Email</label>
+						<input name="email" type="email" required placeholder="you@example.com" />
+						<label class="row">
+							<input name="consent" type="checkbox" required />
+							<span>I agree to be contacted about beta updates.</span>
+						</label>
+						<button class="btn btn-primary" type="submit">Join</button>
+						<p id="waitlistMsg" class="msg" aria-live="polite"></p>
+					</form>
+
+					<form id="contactForm" class="panel">
+						<h3>Contact</h3>
+						<label>Email</label>
+						<input name="email" type="email" required placeholder="you@example.com" />
+						<label>Message</label>
+						<textarea name="message" required rows="4" placeholder="Write your message..."></textarea>
+						<button class="btn btn-ghost" type="submit">Send (demo)</button>
+						<p id="contactMsg" class="msg" aria-live="polite"></p>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div>Tampere, Finland</div>
+			<div>© <span id="year"></span> Viovox</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
