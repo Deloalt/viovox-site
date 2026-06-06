@@ -94,7 +94,7 @@ a:focus {
 }
 
 .logo-img {
-    height: 40px;
+    height: 64px;
     width: auto;
 }
 
@@ -583,6 +583,10 @@ a:focus {
         font-size: 1.1rem;
     }
 
+    .logo-img {
+        height: 48px;
+    }
+
     .nav-links {
         gap: 1.5rem;
     }
@@ -649,6 +653,10 @@ a:focus {
 
     .hero-subtitle {
         font-size: 1rem;
+    }
+
+    .logo-img {
+        height: 40px;
     }
 
     .nav-links {
