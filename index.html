@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Control your phone with EEG. Hands-free control using EEG headsets. Muse 2 supported first.">
     <meta name="theme-color" content="#1E63FF">
-    <title>VioVox – EEG Phone Control</title>
+    <title>Viovox – EEG Phone Control</title>
     <link rel="stylesheet" href="styles.css">
     
     <!-- Favicon Links -->
@@ -20,12 +20,16 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-content">
-                <a href="#" class="logo">
-                    <img src="assets/logo.png" alt="VioVox Logo" class="logo-img">
+                <a href="#" class="logo" aria-label="Viovox home">
+                    <picture>
+                        <source srcset="assets/viovox-lockup-dark.png" media="(prefers-color-scheme: dark)">
+                        <img src="assets/viovox-lockup-light.png" alt="Viovox" class="logo-img">
+                    </picture>
                 </a>
                 <ul class="nav-links">
                     <li><a href="#product">Product</a></li>
                     <li><a href="#how">How it Works</a></li>
+                    <li><a href="#use-cases">Use cases</a></li>
                     <li><a href="#progress">Progress</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -38,40 +42,19 @@
     <section id="product" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Control your phone with EEG.</h1>
-                <p class="hero-subtitle">Hands‑free control using EEG headsets. Muse 2 supported first.</p>
-                <p class="hero-trust">Built in Tampere, Finland.</p>
+                <p class="eyebrow">Assistive tech</p>
+                <h1 class="hero-title">Hands‑free phone control with EEG.</h1>
+                <p class="hero-subtitle">Designed for people with limited mobility and caregivers. Starting with Muse 2.</p>
+                <p class="hero-trust">Privacy‑first • Non‑invasive • Built in Tampere, Finland</p>
 
-                <!-- Inline Waitlist Form -->
-                <form class="waitlist-form hero-form" id="waitlistFormHero">
-                    <div class="form-group">
-                        <input 
-                            type="email" 
-                            id="emailHero" 
-                            name="email" 
-                            placeholder="Enter your email" 
-                            required
-                            autocomplete="email"
-                            aria-label="Email address"
-                        >
-                    </div>
-                    <div class="form-group checkbox-group">
-                        <label class="checkbox-label">
-                            <input 
-                                type="checkbox" 
-                                id="consentHero" 
-                                name="consent" 
-                                required
-                                aria-label="I agree to receive updates"
-                            >
-                            <span>I agree to receive updates</span>
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary" aria-label="Join the waitlist">
+                <!-- Waitlist CTA (Tally) -->
+                <div class="cta-row">
+                    <a class="btn btn-primary" href="https://tally.so/r/REPLACE_WITH_YOUR_FORM" target="_blank" rel="noopener noreferrer">
                         Join the waitlist
-                    </button>
-                    <div class="form-message" id="formMessageHero"></div>
-                </form>
+                    </a>
+                    <a class="btn btn-secondary" href="#how">How it works</a>
+                </div>
+                <p class="cta-note">We’ll email you when beta access opens. No spam.</p>
 
                 <!-- Instagram Link -->
                 <a href="https://www.instagram.com/viovox_nyt" target="_blank" rel="noopener noreferrer" class="instagram-link" aria-label="Follow on Instagram">
@@ -91,23 +74,23 @@
             <div class="benefits-grid">
                 <article class="benefit-card">
                     <div class="benefit-icon"></div>
-                    <h3>Hands‑free control</h3>
-                    <p>Navigate and interact with your device using only your brainwaves.</p>
+                    <h3>Made for accessibility</h3>
+                    <p>Designed around limited mobility use cases and caregiver workflows.</p>
                 </article>
                 <article class="benefit-card">
                     <div class="benefit-icon"></div>
-                    <h3>Fast calibration</h3>
-                    <p>Get started in minutes with our intuitive setup process.</p>
+                    <h3>Quick calibration</h3>
+                    <p>Get started in minutes with a guided setup tailored to you.</p>
                 </article>
                 <article class="benefit-card">
                     <div class="benefit-icon"></div>
-                    <h3>Privacy‑minded</h3>
-                    <p>Your brainwave data stays on your device, never shared without consent.</p>
+                    <h3>Privacy‑first</h3>
+                    <p>Your brainwave data stays private. We don’t sell sensitive data.</p>
                 </article>
                 <article class="benefit-card">
                     <div class="benefit-icon"></div>
                     <h3>Muse 2 first</h3>
-                    <p>Starting with Muse 2. More headsets coming soon.</p>
+                    <p>We’re starting with Muse 2 and expanding to more EEG devices.</p>
                 </article>
             </div>
         </div>
@@ -122,7 +105,28 @@
                         <path d="M8 5v14l11-7z"></path>
                     </svg>
                 </div>
-                <p class="demo-text">Demo coming soon (prototype)</p>
+                <p class="demo-text">Demo coming soon (early prototype)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use cases -->
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <h2>Use cases</h2>
+            <div class="use-cases-grid">
+                <article class="use-case-card">
+                    <h3>At home</h3>
+                    <p>Hands‑free messaging, calls, and phone navigation. In the future: smart home control (lights, TV, AC, etc.).</p>
+                </article>
+                <article class="use-case-card">
+                    <h3>Hospitals & rehab</h3>
+                    <p>Assistive phone access for patients, with caregiver‑friendly setup and privacy in mind.</p>
+                </article>
+                <article class="use-case-card">
+                    <h3>Caregivers & families</h3>
+                    <p>More autonomy for loved ones, with clear onboarding and predictable controls.</p>
+                </article>
             </div>
         </div>
     </section>
@@ -145,7 +149,7 @@
                 <div class="step">
                     <div class="step-number">3</div>
                     <h3>Control hands‑free</h3>
-                    <p>Navigate your phone using just your thoughts.</p>
+                    <p>Use simple, intentional patterns to navigate and interact.</p>
                 </div>
             </div>
         </div>
@@ -229,42 +233,21 @@
             <h2>Stay in the loop</h2>
             <p class="contact-description">Be the first to know about product updates and beta access.</p>
 
-            <form class="waitlist-form" id="waitlistFormContact">
-                <div class="form-group">
-                    <input 
-                        type="email" 
-                        id="emailContact" 
-                        name="email" 
-                        placeholder="Enter your email" 
-                        required
-                        autocomplete="email"
-                        aria-label="Email address"
-                    >
-                </div>
-                <div class="form-group checkbox-group">
-                    <label class="checkbox-label">
-                        <input 
-                            type="checkbox" 
-                            id="consentContact" 
-                            name="consent" 
-                            required
-                            aria-label="I agree to receive updates"
-                        >
-                        <span>I agree to receive updates</span>
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary" aria-label="Join the waitlist">
+            <div class="cta-row cta-row--contact">
+                <a class="btn btn-primary" href="https://tally.so/r/REPLACE_WITH_YOUR_FORM" target="_blank" rel="noopener noreferrer">
                     Join the waitlist
-                </button>
-                <div class="form-message" id="formMessageContact"></div>
-            </form>
+                </a>
+                <a class="btn btn-secondary" href="mailto:hello@viovox.com">Email us</a>
+            </div>
+            <p class="contact-small">Or follow on Instagram: <a href="https://www.instagram.com/viovox_nyt" target="_blank" rel="noopener noreferrer">@viovox_nyt</a></p>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 VioVox. Built in Tampere, Finland.</p>
+            <p>&copy; 2026 Viovox. Built in Tampere, Finland.</p>
+            <p class="legal">Legal entity: Viovox NYT</p>
         </div>
     </footer>
 
