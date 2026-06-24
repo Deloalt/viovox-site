@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Viovox symbol">
+  <defs>
+    <linearGradient id="g" x1="18" y1="18" x2="110" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#61D6FF"/>
+      <stop offset="0.52" stop-color="#1E63FF"/>
+      <stop offset="1" stop-color="#7B5CFF"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="#0B1B2B"/>
+  <path d="M20 64c14-30 28-30 42 0s28 30 46 0" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M28 36l36 58 36-58" fill="none" stroke="url(#g)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".92"/>
+  <circle cx="64" cy="64" r="5" fill="#EAF6FF"/>
+</svg>

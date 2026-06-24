@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viovox — A neural interface, in the making</title>
+    <meta name="description" content="Viovox is an early research project exploring a hands-free phone interface — driven by natural signals like blink, focus and jaw clench." />
+    <meta name="author" content="Viovox" />
+    <meta name="theme-color" content="#0B1B2B" />
+    <meta property="og:title" content="Viovox — A neural interface, in the making" />
+    <meta property="og:description" content="An early research project exploring a hands-free, signal-driven phone interface." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Viovox" />
+    <meta property="og:url" content="https://viovox.net/" />
+    <meta property="og:image" content="assets/viovox-symbol.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@deloment" />
+    <meta name="twitter:image" content="assets/viovox-symbol.svg" />
+    <link rel="canonical" href="https://viovox.net/" />
+    <link rel="icon" type="image/svg+xml" href="assets/viovox-symbol.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('viovox-theme') || 'auto';
+          var m = window.matchMedia('(prefers-color-scheme: light)').matches;
+          var l = t === 'light' || (t === 'auto' && m);
+          document.documentElement.classList.toggle('light', l);
+        } catch (e) {}
+      })();
+    </script>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Organization","name":"Viovox","url":"https://viovox.net/","logo":"https://viovox.net/assets/viovox-symbol.svg","email":"hello@viovox.net","sameAs":["https://www.instagram.com/viovox_nyt?igsh=ZTN4NTVrZWhicTRs&utm_source=qr","https://x.com/deloment"]}
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="Viovox home">
+          <img src="assets/viovox-symbol.svg" alt="" class="brand-logo" />
+          <span>Viovox</span>
+        </a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#signals">Signals</a>
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+          <a href="#cases">Use cases</a>
+        </nav>
+        <a class="button button-primary header-cta" href="https://tally.so/r/jazje1" target="_blank" rel="noopener noreferrer">Follow <span aria-hidden="true">→</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="top" class="hero section-hero">
+        <div class="hero-bg"></div>
+        <div class="grid-bg"></div>
+        <div class="container hero-content">
+          <div class="eyebrow animate-fade-up">✦ Early research · neural interface for your phone</div>
+          <h1 class="animate-fade-up" style="animation-delay:.08s">A phone you'd control<br /><span>with your mind.</span></h1>
+          <p class="hero-copy animate-fade-up" style="animation-delay:.16s">Viovox is an early-stage research project exploring instinctive, hands-free control of a phone — fusing EEG signals from a wearable sensor with glance and micro-expression cues from the phone's camera.</p>
+          <div class="hero-actions animate-fade-up" style="animation-delay:.24s">
+            <a class="button button-primary" href="https://tally.so/r/jazje1" target="_blank" rel="noopener noreferrer">Follow the journey <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#how">What we're exploring</a>
+          </div>
+          <div class="wave-card animate-fade-up" style="animation-delay:.32s" aria-hidden="true">
+            <svg viewBox="0 0 1200 200" preserveAspectRatio="none" class="eeg-wave">
+              <defs>
+                <linearGradient id="waveGradient" x1="0" x2="1" y1="0" y2="0">
+                  <stop offset="0" stop-color="#1E63FF" stop-opacity="0" />
+                  <stop offset="0.5" stop-color="#61D6FF" stop-opacity="1" />
+                  <stop offset="1" stop-color="#1E63FF" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path class="wave-main" d="M0 100 Q 60 100 100 60 T 200 140 T 300 70 T 400 130 T 500 60 T 600 100 T 700 140 T 800 60 T 900 130 T 1000 80 T 1100 110 T 1200 100" />
+              <path class="wave-soft" d="M0 100 Q 60 100 100 80 T 200 120 T 300 85 T 400 115 T 500 80 T 600 100 T 700 120 T 800 80 T 900 115 T 1000 90 T 1100 105 T 1200 100" />
+            </svg>
+            <img src="assets/viovox-symbol.svg" alt="" class="floating-logo" />
+          </div>
+        </div>
+      </section>
+
+      <section id="signals" class="section border-top">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Signals & commands</p>
+            <h2>Natural signals in.<br />Phone commands out.</h2>
+            <p>We're exploring an input model that fuses two streams: brain signals from a wearable EEG sensor, and glance plus micro-expressions from the phone's front camera. Below is the rough vocabulary we're playing with — how each signal maps to a command is still open research, not a promise.</p>
+            <div class="pill-row">
+              <span class="pill">🧠 EEG sensor</span><span class="plus">+</span><span class="pill">📷 Phone camera</span><span class="plus">=</span><span class="pill accent">✦ Instinctive control</span>
+            </div>
+          </div>
+          <div class="two-col">
+            <div>
+              <div class="mini-title">〰 Signals from you</div>
+              <div class="card-grid small-grid" id="signalsGrid"></div>
+            </div>
+            <div>
+              <div class="mini-title">↓ Commands to the phone</div>
+              <div class="card-grid small-grid" id="commandsGrid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section border-top">
+        <div class="container feature-layout">
+          <div class="sticky-copy">
+            <p class="kicker">Principles</p>
+            <h2>What we believe <br />a neural interface should be.</h2>
+            <p>Viovox is in early research. These are the principles guiding what we build — not features of a shipped product.</p>
+          </div>
+          <div class="card-grid" id="principlesGrid"></div>
+        </div>
+      </section>
+
+      <section id="how" class="section border-top section-grided">
+        <div class="grid-bg"></div>
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">What we're exploring</p>
+            <h2>From signal to action — <br />the path we're prototyping.</h2>
+          </div>
+          <div class="steps" id="stepsGrid"></div>
+        </div>
+      </section>
+
+      <section id="cases" class="section border-top">
+        <div class="container">
+          <div class="section-heading">
+            <p class="kicker">Where we're aiming</p>
+            <h2>Built for moments <br />your hands can't help.</h2>
+            <p>These are the scenarios we're designing toward. Not features we ship today — directions our research is pointed at.</p>
+          </div>
+          <div class="use-cases" id="useCasesGrid"></div>
+        </div>
+      </section>
+
+      <section class="section border-top">
+        <div class="container narrow">
+          <div class="cta-card">
+            <div class="grid-bg"></div>
+            <div class="cta-content">
+              <h2>Follow Viovox <br />from day one.</h2>
+              <p>We're in early research. Leave your email and we'll share progress, prototypes and the moment there's something to try. No promises on dates.</p>
+              <a class="button button-primary" href="https://tally.so/r/jazje1" target="_blank" rel="noopener noreferrer">Follow the journey <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer border-top">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand"><img src="assets/viovox-symbol.svg" alt="" class="brand-logo small" /><span>Viovox</span></div>
+          <p>An early research project exploring a hands-free phone interface.</p>
+        </div>
+        <div>
+          <p class="footer-title">Contact</p>
+          <a href="mailto:hello@viovox.net">✉ hello@viovox.net</a>
+        </div>
+        <div>
+          <p class="footer-title">Follow</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/viovox_nyt?igsh=ZTN4NTVrZWhicTRs&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+            <a href="https://x.com/deloment" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter">X</a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">© <span id="year"></span> Viovox. Research in progress.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
